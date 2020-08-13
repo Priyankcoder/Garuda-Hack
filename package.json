@@ -1,0 +1,19 @@
+{
+  "name": "garuda-hack",
+  "version": "1.0.0",
+  "description": "hacking garuda",
+  "main": "server.js",
+  "scripts": {
+    "test": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sushant2/Garuda-Hack.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sushant2/Garuda-Hack/issues"
+  },
+  "homepage": "https://github.com/Sushant2/Garuda-Hack#readme"
+}
