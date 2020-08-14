@@ -1,0 +1,16 @@
+============================================= iDEA =======================================
+
+1.  Allow patients to search for doctors of various specializations (family doctor, cardiologist,
+    podiatrist, etc.) by location.
+
+2.  Show doctor's initials AND consulting fee( cheap as possible ) AND if patient want to book appointment show fee for that too.
+
+3.  Doctor's whole profile ( with certs, degree, etc...)
+
+4.  consulting service ( Q/A type ) - Ques send to all doctor, if any free then will answer
+
+5.  takeCare service - If patient comes out to be a COVID +ve, then proving them regular checkup reminders, 
+    precautions ( he/she should take ), if things goes out of control provide transferring service to nearby
+    inlist ( which obv would be best ) hospital, ...ADD MORE :(  
+
+    

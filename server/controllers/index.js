@@ -8,7 +8,7 @@ module.exports.notFound = (req, res, next) =>{
 module.exports.errors = (err, req, res, next) =>{
     res.locals.error = err
 
-    const status = err?.status || 500
+    const status = err.status || 500
     return res.status(status).json({
         success: false,
         error:{
