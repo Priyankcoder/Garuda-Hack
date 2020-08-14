@@ -10,7 +10,7 @@ const doctorSchema = Schema({
     professionalStatement : String,
     practicingFrom : Date,
     questionAnswered : [{
-        type : mongoose.Schema.Types.ObjectId,
+        type : Schema.Types.ObjectId,
         ref : 'Question'
     }],
     availability : {
@@ -23,7 +23,7 @@ const doctorSchema = Schema({
         reasonOfUnavailability : String
     },
     pendingAppointment : {
-        type : mongoose.Schema.Types.ObjectId,
+        type : Schema.Types.ObjectId,
         ref : 'Appointment'
     },
     currentWorkingStatus : {

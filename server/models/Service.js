@@ -12,15 +12,15 @@ const serviceSchema = Schema({
     },
     servicesApplicable : {
         transferService : {
-            type : mongoose.Schema.Types.ObjectId,
+            type : Schema.Types.ObjectId,
             ref : 'TransferService'
         },
         reminderService : {
-            type : mongoose.Schema.Types.ObjectId,
+            type : Schema.Types.ObjectId,
             ref : 'ReminderService'
         },
         appointmentBookService : {
-            type : mongoose.Schema.Types.ObjectId,
+            type : Schema.Types.ObjectId,
             ref : 'AppointmentBookService'
         }
     },

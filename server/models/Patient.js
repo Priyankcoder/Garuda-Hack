@@ -12,15 +12,18 @@ const patientSchema = Schema({
         state : String
     },
     covidStatus : {
-        type : Boolean,
-        default : false
+        testTaken : Boolean,
+        result : {
+            type : Boolean,
+            default : false
+        }
     },
     questionsAsked : [{
-        type : mongoose.Schema.Types.ObjectId,
+        type : Schema.Types.ObjectId,
         ref : 'Question'
     }],
     services : {
-        type : mongoose.Schema.Types.ObjectId,
+        type : Schema.Types.ObjectId,
         ref : 'Service'
     }
 },{timestamps:true})

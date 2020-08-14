@@ -3,11 +3,11 @@ const Schema = new mongoose.Schema
 
 const appointmentSchema = Schema({
     patientID : {
-        type : mongoose.Schema.Types.ObjectId,
+        type : Schema.Types.ObjectId,
         ref : 'Patient'
     },
     doctorID : {
-        type : mongoose.Schema.Types.ObjectId,
+        type : Schema.Types.ObjectId,
         ref : 'Doctor'
     },
     probableStartTime : Date,

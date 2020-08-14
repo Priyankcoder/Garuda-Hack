@@ -3,7 +3,7 @@ const Schema = new mongoose.Schema
 
 const transferSchema = Schema({
     patientsRegistered:[{
-        type : mongoose.Schema.Types.ObjectId,
+        type : Schema.Types.ObjectId,
         ref : 'Patient'
     }],
     patientAddress : {

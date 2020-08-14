@@ -3,7 +3,7 @@ const Schema = new mongoose.Schema
 
 const qualificationSchema = Schema({
     doctorID : {
-        type : mongoose.Schema.Types.ObjectId,
+        type : Schema.Types.ObjectId,
         ref : 'Doctor'
     },
     qualificationName : String,
