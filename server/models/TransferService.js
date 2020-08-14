@@ -2,6 +2,10 @@ const mongoose = require('mongoose')
 const Schema = new mongoose.Schema
 
 const transferSchema = Schema({
+    patientsRegistered:[{
+        type : mongoose.Schema.Types.ObjectId,
+        ref : 'Patient'
+    }],
     patientAddress : {
         address : String,
         city : String,

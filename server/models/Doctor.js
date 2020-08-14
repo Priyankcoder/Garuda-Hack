@@ -19,9 +19,18 @@ const doctorSchema = Schema({
             default: ['Mon'], // Monday all are available
             enum : ['Mon', 'Tues', 'Wed', 'Thr', 'Fri', 'Sat', 'Sun']
         },
-        isAvailable : Boolean,
+        isAvailable : Boolean, // available ri8 now
         reasonOfUnavailability : String
+    },
+    pendingAppointment : {
+        type : mongoose.Schema.Types.ObjectId,
+        ref : 'Appointment'
+    },
+    currentWorkingStatus : {
+        private : Boolean,
+        hospitalName : String
     }
+    //TODO: MORE TO ADD
 },{timestamps:true})
 
 module.exports = mongoose.model('Doctor',doctorSchema)

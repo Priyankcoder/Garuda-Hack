@@ -6,6 +6,11 @@ const patientSchema = Schema({
     lastName : String,
     contactNumber : Number,
     email : String,
+    location:{
+        address : String,
+        city : String,
+        state : String
+    },
     covidStatus : {
         type : Boolean,
         default : false
@@ -13,7 +18,11 @@ const patientSchema = Schema({
     questionsAsked : [{
         type : mongoose.Schema.Types.ObjectId,
         ref : 'Question'
-    }],  
+    }],
+    services : {
+        type : mongoose.Schema.Types.ObjectId,
+        ref : 'Service'
+    }
 },{timestamps:true})
 
 module.exports = mongoose.model('Patient',patientSchema)

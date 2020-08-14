@@ -14,3 +14,23 @@
     inlist ( which obv would be best ) hospital, ...ADD MORE :(  
 
     
+============================================== FrontEnd Proto ===============================
+
+after login what happens ->
+
+HOME_PAGE : - ( only for Patient ) if first time user have come then opens with a modal or as you wish, with a BOT ( which
+              will take your health status and send that to back-end )
+              so according to the status we may display services
+              as if positive => is applicable to both services (takeCare service & appointmentBook service)
+              and if negative => is applicable to appointment service only
+            - now other than BOT what we can keep in HOMEPAGE ?
+              can show our services and redirects to them also
+
+now I was thinking of tabs what what we can keep ?
+"service tab" -- ( only for Patient ) -- showing services available to patient
+"Q/A tab" -- (for both doc n patient ) -- showing questions asked with search bar + create question ( only for Patient )( if 
+              question already present then show old questions similar to that )
+"News tab" -- (for both doc n patient ) showing news updates
+"Appointments tab" -- (will be different UI for both patient and doctor accordingly) -- Doctor can see appoints coming
+                       and patient can have a platform to book a appointment to a certain doctor
+"MORE TABS COMING ;)"                       

@@ -22,7 +22,7 @@ const appointmentSchema = Schema({
         type : mongoose.Schema.Types.ObjectId,
         ref : 'Appointment'
     },
-    // ADD more here 
+    //TODO: ADD more here 
 },{timestamps:true})
 
 module.exports = mongoose.model('AppointmentBookService',appointmentSchema)
