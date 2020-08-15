@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
-const Schema = new mongoose.Schema
+const Schema = mongoose.Schema
 
-const reminderSchema = Schema({
+const reminderSchema = new Schema({
     text : String,
     checkUpDate : Date,
     daysLeft : Number,

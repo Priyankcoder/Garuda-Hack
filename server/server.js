@@ -4,6 +4,7 @@ const app = express()
 const cors = require('cors') 
 const bodyParser = require('body-parser')
 const error = require('./controllers')
+const routes = require('./routes')
 
 const {PORT} = require('./config')
 
@@ -20,6 +21,7 @@ app.use(bodyParser.json())
 app.use(cors())
 
 //routes
+app.use('/api/auth', routes.auth)
 
 // error handlers
 app.use(error.notFound)

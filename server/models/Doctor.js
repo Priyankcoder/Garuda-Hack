@@ -1,8 +1,8 @@
 const mongoose = require('mongoose')
-const Schema = new mongoose.Schema
+const Schema = mongoose.Schema
 
-const doctorSchema = Schema({
-    docID : Number,
+const doctorSchema = new Schema({
+    docID : String,
     firstName : String,
     lastName : String,
     email : String,
@@ -17,15 +17,15 @@ const doctorSchema = Schema({
         whenAvailable:{
             type : [String],
             default: ['Mon'], // Monday all are available
-            enum : ['Mon', 'Tues', 'Wed', 'Thr', 'Fri', 'Sat', 'Sun']
+            enum : ['Mon', 'Tue', 'Wed', 'Thr', 'Fri', 'Sat', 'Sun']
         },
         isAvailable : Boolean, // available ri8 now
         reasonOfUnavailability : String
     },
-    pendingAppointment : {
+    pendingAppointments : [{
         type : Schema.Types.ObjectId,
         ref : 'Appointment'
-    },
+    }],
     currentWorkingStatus : {
         private : Boolean,
         hospitalName : String

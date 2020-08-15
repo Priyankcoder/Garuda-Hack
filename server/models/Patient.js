@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
-const Schema = new mongoose.Schema
+const Schema = mongoose.Schema
 
-const patientSchema = Schema({
+const patientSchema = new Schema({
     firstName : String,
     lastName : String,
     contactNumber : Number,
@@ -9,7 +9,6 @@ const patientSchema = Schema({
     location:{
         address : String,
         city : String,
-        state : String
     },
     covidStatus : {
         testTaken : Boolean,

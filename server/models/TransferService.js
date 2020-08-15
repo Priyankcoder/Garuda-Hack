@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
-const Schema = new mongoose.Schema
+const Schema = mongoose.Schema
 
-const transferSchema = Schema({
+const transferSchema = new Schema({
     patientsRegistered:[{
         type : Schema.Types.ObjectId,
         ref : 'Patient'
