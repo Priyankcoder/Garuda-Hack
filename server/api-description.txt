@@ -1,0 +1,42 @@
+base URL : http://localhost:5000
+
+================================================== Auth APIs ==================================================
+Login API -> /api/auth/login
+    type : POST
+    body :  email (String) , 
+            password  (String) ( This is coming from front-end form )
+    response : {"token" : tokenGenerated} ( save it in header ["authorization"] as ["Bearer" + token] )
+
+Register patient API -> /api/auth/register-patient
+    type : POST
+    body :  firstName (String) ,
+            lastName (String) ,
+            userName (String) ,
+            password (String) ,
+            contactNumber (Number) ,
+            email (String) ,
+            city (String) , 
+            address (String)  (These all are coming from front-end form)
+    response :  {
+                    "message" : "You have been registered, go LOGIN yourself",
+                    "userType" : "Patient" or "Doctor"
+                } ( use this message to show user after register is done, and redirect them to LOGIN PAGE )
+
+Register doctor API -> /api/auth/register-doctor
+    type : POST
+    body :  firstName (String) ,
+            lastName (String) ,
+            userName (String) ,
+            password (String) ,
+            contactNumber (Number) ,
+            email (String) ,
+            professionalStatement (file object uploaded) ,
+            practicingFrom (Date object) ,
+            whenAvailable (Array of any of ['Mon', 'Tue', 'Wed', 'Thr', 'Fri', 'Sat', 'Sun']) ,
+            reasonOfUnavailability (String) ,
+            private (Boolean) ,
+            hospitalName (String)  (These all are coming from front-end form)
+    response :  {
+                    "message" : "You have been registered, go LOGIN yourself",
+                    "userType" : "Patient" or "Doctor"
+                } ( use this message to show user after register is done, and redirect them to LOGIN PAGE )
