@@ -1,4 +1,5 @@
-base URL : http://localhost:5000
+base URL : http://localhost:5000 ( dev )
+         : https://garudahacks.herokuapp.com ( prod )
 
 ================================================== Auth APIs ==================================================
 Login API -> /api/auth/login
