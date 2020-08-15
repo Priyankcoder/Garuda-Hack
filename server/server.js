@@ -23,6 +23,7 @@ app.use(cors())
 //routes
 app.use('/api/auth', routes.auth)
 app.use('/api/service', routes.services)
+app.use('/api/question', routes.ques_ans)
 
 // error handlers
 app.use(error.notFound)
