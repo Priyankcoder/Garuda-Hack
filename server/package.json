@@ -18,5 +18,8 @@
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.9.28",
     "shortid": "^2.2.15"
+  },
+  "engines": {
+    "node": "10.x"
   }
 }
