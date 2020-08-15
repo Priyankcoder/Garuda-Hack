@@ -11,7 +11,10 @@ const patientSchema = new Schema({
         city : String,
     },
     covidStatus : {
-        testTaken : Boolean,
+        testTaken : {
+            type : Boolean,
+            default : false
+        },
         result : {
             type : Boolean,
             default : false

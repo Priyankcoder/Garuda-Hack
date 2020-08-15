@@ -22,6 +22,7 @@ app.use(cors())
 
 //routes
 app.use('/api/auth', routes.auth)
+app.use('/api/service', routes.services)
 
 // error handlers
 app.use(error.notFound)
