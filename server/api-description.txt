@@ -40,3 +40,43 @@ Register doctor API -> /api/auth/register-doctor
                     "message" : "You have been registered, go LOGIN yourself",
                     "userType" : "Patient" or "Doctor"
                 } ( use this message to show user after register is done, and redirect them to LOGIN PAGE )
+
+
+=============================================== Services APIs ===================================================
+
+covid-status-update API -> /api/service/covid-status
+    type : PUT
+    body :  result (Boolean) ( This is coming from front-end form )
+    response : {"patient" : updatedPatientData} ( change covid-status from this in frontEnd )
+
+
+============================================== Questions APIs ===================================================
+
+create-question API -> /api/question
+    type : POST
+    body :  question (String)
+            ( This is coming from front-end form )
+    response :  {
+                    "patient" : updatedPatient,
+                    "question" : CreatedQuestion
+                } 
+
+get-all-questions API -> /api/questions
+    type : GET
+    response : {"questions" : Array of questions}
+
+get-my-questions API -> /api/questions/me
+        ( this API will give array of questions, but 
+                 if patient is logged in => then give array of questions asked
+            and, if doctor is logged in => then give array of questions answered 
+        )
+    type : GET
+    response : {"questions" : Array of questions}
+
+answer-question API -> /api/question/:id_of_question
+    type : POST
+    body : answer (String) ( will come from front-end )    
+    response :  {
+                    "updatedDoctor" : updatedDoctor ,
+                    "updatedQuestion" : updatedDoctor
+                }
