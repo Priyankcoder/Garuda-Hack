@@ -1,0 +1,14 @@
+*{
+    padding: "0px";
+    margin: "0px";
+    box-sizing: border-box;
+}
+
+.chart{
+    display: "flex";
+    width: "10%";
+    margin-right: "0px";
+    border: "2px solid black"
+
+
+}
