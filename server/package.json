@@ -4,7 +4,7 @@
   "description": "hacking garuda",
   "main": "server.js",
   "scripts": {
-    "start" : "node server.js",
+    "start": "node server.js",
     "server": "nodemon server.js"
   },
   "author": "",
