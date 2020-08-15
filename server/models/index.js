@@ -1,0 +1,7 @@
+module.exports.Patient = require('./Patient')
+module.exports.Doctor = require('./Doctor')
+module.exports.Appointment = require('./Appointment')
+module.exports.Qualification = require('./Qualification')
+module.exports.Service = require('./Service')
+module.exports.User = require('./User')
+module.exports.Question = require('./Question')
