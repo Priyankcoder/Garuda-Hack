@@ -5,15 +5,15 @@ import News from './components/News/News'
 import Chart from './components/Chart/Chart'
 import Navbar from './components/NavBar/NavBar'
 import Ask from './components/Ask/Ask'
-
+import Qna from './components/Qna/Qna'
 
 
 const App = () => (
   <Router>
     {/* <Route path="/" exact component={MainPage} /> */}
     <Navbar />
-    {/* <Route path="/Appointments" exact component={Appointments} />
-    <Route path="/qna" exact component={Qna} /> */}
+    {/* <Route path="/Appointments" exact component={Appointments} /> */}
+    <Route path="/qna" exact component={Qna} />
     <Route path="/ask" exact component={Ask} />
     {/* <Route path="/service" exact component={Service} />
     <Route path="/profile" exact component={Profile} /> */}

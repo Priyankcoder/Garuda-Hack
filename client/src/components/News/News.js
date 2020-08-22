@@ -6,7 +6,7 @@ import Button from 'react-bootstrap/Button'
 
 const News = () => {
     const [data, setData] = useState(null)
-    const url = "http://newsapi.org/v2/top-headlines?country=id&category=health&apiKey=9361906440a74781970aeea1cf2ef85c"
+    const url = "http://newsapi.org/v2/top-headlines?country=in&category=health&apiKey=9361906440a74781970aeea1cf2ef85c"
     let news;
     useEffect(() => {
         const fetchDailyData = async () => {
@@ -34,7 +34,7 @@ const News = () => {
                 setData(news);
                 // console.log(news)
             } catch (error) {
-                return error;
+                console.log(error);
             }
             
         };
