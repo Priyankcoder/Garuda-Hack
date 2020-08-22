@@ -15,7 +15,7 @@ export default function SimpleMenu() {
                     <Nav className="ml-auto" >
                         <Nav.Link href="/"><img src="https://img.icons8.com/material-outlined/24/000000/combo-chart.png" />&nbsp;&nbsp;Covid Data</Nav.Link>
                         <Nav.Link href="/news"><img src="https://img.icons8.com/android/24/000000/news.png" />&nbsp;&nbsp;News</Nav.Link>
-                        {/* <Nav.Link href="/qna"><img src="https://img.icons8.com/ios-glyphs/30/000000/consultation.png" />&nbsp;QnA</Nav.Link> */}
+                        <Nav.Link href="/qna"><img src="https://img.icons8.com/ios-glyphs/30/000000/consultation.png" />&nbsp;QnA</Nav.Link>
                         <Nav.Link href="/ask"><img src="https://img.icons8.com/material-sharp/24/000000/ask-question.png" />&nbsp;&nbsp;Ask a Ques</Nav.Link>
                         {/* <Nav.Link href="/appointments"><img src="https://img.icons8.com/material/24/000000/filled-appointment-reminders.png" />&nbsp;&nbsp;My Appointments</Nav.Link> */}
                         {/* <Nav.Link href="/service"><img src="https://img.icons8.com/android/24/000000/stethoscope.png" />&nbsp;&nbsp;Service</Nav.Link> */}
